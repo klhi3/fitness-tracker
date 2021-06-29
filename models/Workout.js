@@ -41,12 +41,19 @@ const WorkoutSchema = new Schema(
                     default: 0, 
                 },
         }],
+
+        totalDuration: {
+            type: Number,
+            default: 0,
+        },
+
+
     },
     // {
         
-    //         toObject: {
-    //         virtuals: true
-    //         },
+    // //         toObject: {
+    // //         virtuals: true
+    // //         },
 
     //         toJSON: {
     //         virtuals: true 
@@ -55,13 +62,13 @@ const WorkoutSchema = new Schema(
 );
 
 // Create a virtual property `totalDuration` 
-WorkoutSchema
-    .virtual("totalDuration")
-    .get(() => {  
-        const duration = this.exercises.reduce((total, exercise) => {
-            return total + exercise.duration;
-        }, 0);
-});
+// WorkoutSchema
+//     .virtual("totalDuration")
+//     .get(() => {  
+//         const duration = this.exercises.reduce((total, exercise) => {
+//             return total + exercise.duration;
+//         }, 0);
+// });
 
 
 // workoutSchemakout.aggregate([
