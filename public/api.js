@@ -3,10 +3,13 @@ const API = {
     let res;
     try {
       res = await fetch("/api/workouts");
+      console.log(">>>> getLastWorkout");
+      console.dir(res);
     } catch (err) {
       console.log(err)
     }
     const json = await res.json();
+    console.log("json:"+json);
 
     return json[json.length - 1];
   },

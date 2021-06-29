@@ -17,8 +17,7 @@ This workout tracker is with the front end code, Mongo database with a Mongoose 
 3. To add new exercises to a new workout plan.
 4. To view the combined weight of multiple exercises from the past seven workouts on the `stats` page.
 5. To view the total duration of each workout from the past seven workouts on the `stats` page.
-6. Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), 
-the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) 
+6. Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. 
 
 
 ## Diploy
@@ -27,4 +26,10 @@ the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual
 
   * [Deploy with Heroku - Fitness Tracker](https://fitness-tracker-klhi3.herokuapp.com/)
 
+## Links
 
+* [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/) 
+
+* [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) 
+
+* [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
